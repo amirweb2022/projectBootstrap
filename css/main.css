@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+html {
+  scroll-behavior: smooth;
+}
+:root{
+  --mainBlue:#40ACF1;
+  --transparentBlue:rgba(64, 172, 241,0.7);
+  --mainWhite:#FFFFFF;
+  --mainBlack:#292F36;
+  --mainGrey:rgb(216, 214, 214);
+  --mainYellow:#e3b505;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+.navbar {
+  background-color: var(--mainWhite);
+}
+.navbar-icon {
+  font-size: 3rem;
+  color: var(--mainBlue);
+}
+.navbar-toggler {
+  outline-color: var(--mainBlue) !important;
+}
+.nav-link {
+  color: var(--mainBlack);
+}
+.nav-link:hover {
+  color: var(--mainBlue);
+}
+.nav-icon {
+  font-size: 2rem;
+  color: var(--mainBlue);
+  text-decoration: none;
+}
+.nav-icon:hover {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.header {
+  color: var(--mainWhite);
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+}
+
+.height-max {
+  min-height: calc(100vh - 80px);
+  background-image: url(../img/headerBcg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: zooming;
+  animation-duration: 20s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes zooming{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2)translateX(-6%);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.title-heading {
+  background-color: rgb(0,0,0,0.5, green, blue);
+  border-left: 0.3rem solid var(--mainBlue);
+}
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.section-title-special {
+  background-color: var(--transparentBlue);
+  color: var(--mainWhite);
+  padding: 0.5rem 1.3rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.skills-icon {
+  font-size: 3rem;
+  color: var(--mainYellow);
+  background-color: var(--mainGrey);
+}
+.skills-icon:hover {
+  color: var(--mainYellow);
+}
+.skills-underline {
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--mainBlue);
+  margin: 1rem auto;
+}
